@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>To-Do List</title>
+</head>
+<body>
+
+    <div class="msgbox">
+        <h3>نام کاربری</h3>
+        <p>لطفا نام کاربری خود را وارد کنید</p>
+        <input type="text" id="name" placeholder="نام کاربری">
+       
+        <button id="submit">ذخیره کردن</button>
+    </div>
+    <div class="container">
+        <div class="todo-app">
+            <h2 id="greeting"></h2>
+            <div class="title">
+            <h2> لیست کار <img src="images/icon.png"></h2>
+            <p id="date"></p>
+            </div>
+            <div class="row">
+                <input type="text" id="input-box" placeholder="متن خود را وارد کنید">
+                <button id="add-button">اضافه کردن</button>
+            </div>
+            <ul id="list-container">
+            </ul>
+        </div>
+    </div>
+    <script src="node_modules/persian-date/dist/persian-date.js" type="text/javascript"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
