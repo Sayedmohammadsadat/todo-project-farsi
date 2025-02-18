@@ -13,6 +13,15 @@ const todoApp = document.querySelector('.todo-app');
 inputName.focus();
 
 checkMsgBox();
+let li = document.createElement("li");
+    li.innerHTML = 'Heelll';
+    listContainer.appendChild(li);
+    let span = document.createElement('span');
+    span.innerHTML = '\u00d7';
+    li.appendChild(span);
+    saveData();
+    inputBox.value = "";
+    inputBox.focus();
 
 saveName.addEventListener('click', saveUserName);
 
